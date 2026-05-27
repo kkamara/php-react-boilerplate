@@ -63,7 +63,7 @@ export default function HomeComponent() {
     </div>
   }
 
-  const parseDate = date => moment(date).format("YYYY-MM-DD hh:mm")
+  const parseDate = date => moment(date).format("YYYY-MM-DD HH:mm")
 
   const renderList = () => {
     if (!state.users.data) {
