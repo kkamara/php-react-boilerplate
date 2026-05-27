@@ -13,7 +13,13 @@ const AuthRoute = ({ redirectPath, }) => {
     dispatch(authorise())
   }, [])
 
-  if (state.auth.loading) {
+  if (
+    state.auth.loading || 
+    (
+      null === state.auth.data &&
+      null === state.auth.error
+    )
+  ) {
     return null
   }
 
