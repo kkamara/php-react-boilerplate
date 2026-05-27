@@ -28,16 +28,17 @@ export default function RegisterComponent() {
   const authState = useSelector(state => (state.auth))
 
   useEffect(() => {
-    if (localStorage.getItem("user-token")) {
-      return navigate("/")
-    } else if (authState.loading) {
-      dispatch(authorise())
-    }
-    if (authState.error && "Token not set." !== authState.error) {
-      setError(authState.error)
-    }
-    if (null !== authState.data) {
-      navigate("/user/login")
+    dispatch(authorise())
+  }, [])
+
+  useEffect(() => {
+    if (false === authState.loading) {
+      if (authState.error && "Token not set." !== authState.error) {
+        setError(authState.error)
+      }
+      if (authState.data) {
+        navigate("/user/login")
+      }
     }
   }, [authState])
 
