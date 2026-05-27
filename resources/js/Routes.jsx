@@ -23,9 +23,9 @@ export default () => {
         <Route element={<AuthRoute/>}>
           <Route path={url("/")} element={<Home />}/>
           <Route path={url("/user/settings")} element={<Settings />}/>
+          <Route path={url("/user/logout")} element={<Logout />}/>
         </Route>
         <Route path={url("/user/login")} element={<Login />}/>
-        <Route path={url("/user/logout")} element={<Logout />}/>
         <Route path={url("/user/register")} element={<Register />}/>
         <Route path={url("*")} element={<NotFound />}/>
       </Routes>
