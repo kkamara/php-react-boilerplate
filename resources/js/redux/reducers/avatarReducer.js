@@ -3,7 +3,7 @@ import { avatar, } from "../types"
 const initState = {
   data: null,
   error: null,
-  loading: true,
+  loading: false,
 }
 
 export default function avatarReducer (state = initState, action) {

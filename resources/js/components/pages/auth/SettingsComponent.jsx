@@ -37,9 +37,9 @@ export default function SettingsComponent() {
   const [error, setError] = useState("")
 
   useEffect(() => {
-    setFirstName(state.auth.data.user.firstName)
-    setLastName(state.auth.data.user.lastName)
-    setEmail(state.auth.data.user.email)
+    setFirstName(state.auth.data.firstName)
+    setLastName(state.auth.data.lastName)
+    setEmail(state.auth.data.email)
   }, [])
 
   useEffect(() => {
@@ -139,7 +139,12 @@ export default function SettingsComponent() {
     }))
   }
   
-  if (state.auth.loading) {
+  if (
+    state.auth.loading ||
+    state.avatar.loading ||
+    state.updateUserSettings.loading ||
+    state.removeAvatar.loading
+  ) {
     <div className="container settings-container text-center">
       <Helmet>
         <title>User Settings - {import.meta.env.VITE_APP_NAME}</title>
@@ -161,7 +166,7 @@ export default function SettingsComponent() {
 
           <div className="edit-avatar-container">
             <img
-              src={state.auth.data.user.avatarPath}
+              src={state.auth.data.avatarPath}
               alt="Avatar Image"
               className="img-fluid avatar-image"
             />

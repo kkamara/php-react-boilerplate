@@ -3,7 +3,7 @@ import { updateUserSettings, } from "../types"
 const initState = {
   data: null,
   error: null,
-  loading: true,
+  loading: false,
 }
 
 export default function updateUserSettingsReducer (state = initState, action) {

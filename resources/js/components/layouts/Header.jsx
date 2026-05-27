@@ -13,7 +13,7 @@ export default function Header(props) {
         <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <img
             className="header-user-avatar"
-            src={authResponse.data.user.avatarPath}
+            src={authResponse.data.avatarPath}
           />
           User
         </a>
