@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Error({ error, }) {
+export default function ErrorComponent({ error, }) {
   if (!error || "Token not set." === error) {
     return null
   }
