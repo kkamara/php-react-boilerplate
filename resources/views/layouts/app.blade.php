@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <!-- Self-referencing canonical URL for SEO, so search engines know the preferred URL for this page -->
-    <!-- This should be added for each page to indicate the preferred URL -->
-    <link rel="canonical" href="https://kelvinkamara.com" />
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
