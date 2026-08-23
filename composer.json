@@ -1,5 +1,5 @@
 {
-    "name": "kkamara/php-reactjs-boilerplate",
+    "name": "kkamara/php-react-boilerplate",
     "authors": [
         {
             "name": "Kelvin Kamara",
@@ -8,13 +8,13 @@
         }
     ],
     "type": "project",
-    "description": "(2021) A Laravel 13.x boilerplate with ReactJS 19 Redux SPA.",
+    "description": "(2021) A Laravel 13.x boilerplate with React 19 Redux SPA.",
     "keywords": [
         "web",
         "web-app",
         "api",
         "react",
-        "reactjs",
+        "react",
         "tests",
         "testing",
         "laravel"

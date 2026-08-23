@@ -1,10 +1,10 @@
-<img src="https://github.com/kkamara/useful/blob/main/php-reactjs-boilerplate.png?raw=true" alt="php-reactjs-boilerplate.png" width=""/>
+<img src="https://github.com/kkamara/useful/blob/main/php-react-boilerplate.png?raw=true" alt="php-react-boilerplate.png" width=""/>
 
-<img src="https://github.com/kkamara/useful/blob/main/php-reactjs-boilerplate2.png?raw=true" alt="php-reactjs-boilerplate2.png" width=""/>
+<img src="https://github.com/kkamara/useful/blob/main/php-react-boilerplate2.png?raw=true" alt="php-react-boilerplate2.png" width=""/>
 
-# PHP ReactJS Boilerplate [![API](https://github.com/kkamara/php-reactjs-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/php-reactjs-boilerplate/actions/workflows/build.yml)
+# PHP React Boilerplate [![API](https://github.com/kkamara/php-react-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/php-react-boilerplate/actions/workflows/build.yml)
 
-(2021) A Laravel 13.x boilerplate with ReactJS 19 Redux SPA.
+(2021) A Laravel 13.x boilerplate with React 19 Redux SPA.
 
 * [Using Postman?](#postman)
 
@@ -29,9 +29,9 @@
 
 [Get Postman HTTP client](https://www.postman.com/).
 
-[Postman API Collection for PHP ReactJS Boilerplate](https://github.com/kkamara/php-reactjs-boilerplate/blob/main/database/php-reactjs-boilerplate.postman_collection.json).
+[Postman API Collection for PHP React Boilerplate](./database/php-react-boilerplate.postman_collection.json).
 
-[Postman API Environment for PHP ReactJS Boilerplate](https://github.com/kkamara/php-reactjs-boilerplate/blob/main/database/php-reactjs-boilerplate.postman_environment.json).
+[Postman API Environment for PHP React Boilerplate](./database/php-react-boilerplate.postman_environment.json).
 
 ## Installation
 
@@ -75,15 +75,13 @@ php artisan serve --port=8000
 php artisan route:list
 ```
 
-View the API collection [here](https://documenter.getpostman.com/view/17125932/TzzAKvVe).
-
 ## Feature Tests
 
 ```bash
 php artisan test --filter=API
 ```
 
-View the feature test code [here](https://raw.githubusercontent.com/kkamara/php-reactjs-boilerplate/main/tests/Feature/API/UserTest.php).
+View the feature test code [here](./tests/Feature/API/V1/UserTest.php).
 
 <a name="test-emails"></a>
 ## Sending & Viewing Test Emails
@@ -100,9 +98,9 @@ Ensure `MAIL_MAILER` setting in your `.env` file is set to `smtp`. After running
 
 ## Misc.
 
-* [See PHP ReactJS Boilerplate](https://github.com/kkamara/php-reactjs-boilerplate)
+* [See PHP React Boilerplate](https://github.com/kkamara/php-react-boilerplate)
 
-* [See ReactJS Native Mobile App Boilerplate](https://github.com/kkamara/ReactJSNativeMobileAppBoilerplate)
+* [See React Native Mobile App Boilerplate](https://github.com/kkamara/ReactNativeMobileAppBoilerplate)
 
 * [See MRVL Desktop](https://github.com/kkamara/mrvl-desktop)
 
