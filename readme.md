@@ -1,6 +1,6 @@
-<img src="https://github.com/kkamara/useful/blob/main/php-react-boilerplate.png?raw=true" alt="php-react-boilerplate.png" width=""/>
+<img src="https://raw.githubusercontent.com/kkamara/useful/refs/heads/main/php-react-boilerplate.png" alt="php-react-boilerplate.png" width=""/>
 
-<img src="https://github.com/kkamara/useful/blob/main/php-react-boilerplate2.png?raw=true" alt="php-react-boilerplate2.png" width=""/>
+<img src="https://raw.githubusercontent.com/kkamara/useful/refs/heads/main/php-react-boilerplate2.png" alt="php-react-boilerplate2.png" width=""/>
 
 # PHP React Boilerplate [![API](https://github.com/kkamara/php-react-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/php-react-boilerplate/actions/workflows/build.yml)
 

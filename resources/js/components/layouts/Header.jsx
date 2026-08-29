@@ -14,6 +14,7 @@ export default function Header(props) {
           <img
             className="header-user-avatar"
             src={authResponse.data.avatarPath}
+            alt="User avatar"
           />
           User
         </a>
