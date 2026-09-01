@@ -4,7 +4,7 @@
 
 # PHP React Boilerplate [![API](https://github.com/kkamara/php-react-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/php-react-boilerplate/actions/workflows/build.yml)
 
-(2021) A Laravel 13.x boilerplate with React 19 Redux SPA.
+(03-Mar-2022) A Laravel 13.x boilerplate with React 19 Redux SPA.
 
 * [Using Postman?](#postman)
 
