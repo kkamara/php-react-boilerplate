@@ -18,8 +18,6 @@
 
 * [Sending & Viewing Test Emails](#test-emails)
 
-* [Misc.](#misc)
-
 * [Contributing](#contributing)
 
 * [License](#license)
@@ -95,20 +93,6 @@ docker run -p 8025:8025 -p 1025:1025 mailhog/mailhog
 ```
 
 Ensure `MAIL_MAILER` setting in your `.env` file is set to `smtp`. After running the above command this app should now be able to connect to the Mailhog email server running through Docker.
-
-## Misc.
-
-* [See PHP React Boilerplate](https://github.com/kkamara/php-react-boilerplate)
-
-* [See React Native Mobile App Boilerplate](https://github.com/kkamara/ReactNativeMobileAppBoilerplate)
-
-* [See MRVL Desktop](https://github.com/kkamara/mrvl-desktop)
-
-* [See MRVL Web](https://github.com/kkamara/mrvl-web)
-
-* [See PHP Docker Skeleton](https://github.com/kkamara/php-docker-skeleton)
-
-* [See PHP Scraper](https://github.com/kkamara/php-scraper).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
