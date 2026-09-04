@@ -343,58 +343,6 @@
                       "body": "{\n    \"message\": \"Success\"\n}"
                     }
                   ]
-                },
-                {
-                  "name": "Update User",
-                  "request": {
-                    "auth": {
-                      "type": "bearer",
-                      "bearer": [
-                        {
-                          "key": "token",
-                          "value": "{{token}}",
-                          "type": "string"
-                        }
-                      ]
-                    },
-                    "method": "PUT",
-                    "header": [
-                      {
-                        "key": "Time-Zone",
-                        "value": "Europe/London",
-                        "type": "text"
-                      },
-                      {
-                        "key": "Content-Type",
-                        "value": "application/json",
-                        "type": "text"
-                      },
-                      {
-                        "key": "Accept",
-                        "value": "application/json",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\",\r\n    \"email\": \"jane@doe.com\",\r\n    \"password\": \"secret\",\r\n    \"passwordConfirmation\": \"secret\"\r\n}",
-                      "options": {
-                        "raw": {
-                          "language": "json"
-                        }
-                      }
-                    },
-                    "url": {
-                      "raw": "{{web}}/user",
-                      "host": [
-                        "{{web}}"
-                      ],
-                      "path": [
-                        "user"
-                      ]
-                    }
-                  },
-                  "response": []
                 }
               ]
             },
@@ -787,6 +735,58 @@
                     "body": {
                       "mode": "raw",
                       "raw": "",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{web}}/user",
+                      "host": [
+                        "{{web}}"
+                      ],
+                      "path": [
+                        "user"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Update User",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Time-Zone",
+                        "value": "Europe/London",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\",\r\n    \"email\": \"jane@doe.com\",\r\n    \"password\": \"secret\",\r\n    \"passwordConfirmation\": \"secret\"\r\n}",
                       "options": {
                         "raw": {
                           "language": "json"
