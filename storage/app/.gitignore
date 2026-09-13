@@ -1,3 +1,6 @@
 *
 !public/
+!public/images/
+!public/images/profile/
+!public/images/profile/default-avatar.webp
 !.gitignore
