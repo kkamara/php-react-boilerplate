@@ -1,4 +1,5 @@
 {
+    "$schema": "https://www.schemastore.org/package.json",
     "private": true,
     "type": "module",
     "scripts": {
@@ -8,12 +9,12 @@
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
         "@reduxjs/toolkit": "^2.8.1",
-        "@vitejs/plugin-react": "^6.0.1",
+        "@vitejs/plugin-react": "^6.1.1",
         "axios": "^1.13.6",
         "bootstrap": "^5.3",
-        "concurrently": "^9.0.1",
+        "concurrently": "^10.0.3",
         "jquery": "^3.6.3",
-        "laravel-vite-plugin": "^1.2.8",
+        "laravel-vite-plugin": "^3.1",
         "moment": "^2.30.1",
         "react": "^19.0.0",
         "react-bootstrap": "^2.7",
@@ -26,5 +27,8 @@
         "sass": "^1.98.0",
         "tailwindcss": "^4.2.2",
         "vite": "^8.0.1"
+    },
+    "optionalDependencies": {
+        "@laravel/multiplex": "^0.4.1"
     }
 }
