@@ -13,7 +13,8 @@ Route::prefix("v1/web")
     ->group(function () {
         Route::prefix("/user")->group(function () {
             Route::post("/register", [WebUserController::class, "register"]);
-            Route::post("/", [WebUserController::class, "login"]);
+            Route::post("/", [WebUserController::class, "login"])
+                ->name("login");
             Route::delete(
                 "/",
                 [WebUserController::class, "logout"],
