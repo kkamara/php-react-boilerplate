@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\V1\Web\UserController as WebUserController;
 use App\Http\Controllers\API\V1\Web\UsersController as WebUsersController;
 use App\Http\Controllers\API\V1\UserController;
-use \App\Http\Controllers\API\HealthController;
+use App\Http\Controllers\API\HealthController;
 use App\Http\Controllers\API\EmailController;
 
 // Add single page app API routes
