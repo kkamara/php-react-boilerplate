@@ -25,7 +25,7 @@ export const LoginUserService = (credentials) => {
   )
 }
 
-export const AuthorizeUserService = () => {
+export const AuthoriseUserService = () => {
   const http = new HttpService()
   const tokenID = "user-token"
   

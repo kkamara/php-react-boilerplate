@@ -1,6 +1,6 @@
 import {
   LoginUserService,
-  AuthorizeUserService,
+  AuthoriseUserService,
   LogoutUserService,
   RegisterUserService,
 } from "../../services/AuthService"
@@ -37,18 +37,18 @@ export const login = creds => {
 export const authorise = () => {
   return dispatch => {
 
-    dispatch({ type: auth.AUTH_AUTHORIZE_PENDING, })
+    dispatch({ type: auth.AUTH_AUTHORISE_PENDING, })
     const tokenID = "user-token"
     if (localStorage.getItem(tokenID) === null) {
       return dispatch({
-        type: auth.AUTH_AUTHORIZE_ERROR,
+        type: auth.AUTH_AUTHORISE_ERROR,
         payload: "Token not set.",
       })
     }
 
-    AuthorizeUserService().then(res => {
+    AuthoriseUserService().then(res => {
       dispatch({
-        type: auth.AUTH_AUTHORIZE_SUCCESS,
+        type: auth.AUTH_AUTHORISE_SUCCESS,
         payload: res.user,
       })
 
@@ -66,7 +66,7 @@ export const authorise = () => {
         message = "Something went wrong. Please come back later."
       }
       dispatch({
-        type: auth.AUTH_AUTHORIZE_ERROR,
+        type: auth.AUTH_AUTHORISE_ERROR,
         payload: message,
       })
     })

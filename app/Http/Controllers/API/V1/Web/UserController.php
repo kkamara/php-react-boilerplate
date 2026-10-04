@@ -112,7 +112,7 @@ class UserController extends Controller
         ]);
     }
 
-    public function authorizeUser(Request $request): JsonResponse|UserResource {
+    public function authoriseUser(Request $request): JsonResponse|UserResource {
         $cleanEmailInput = filter_var(
             trim($request->user()->email),
             FILTER_SANITIZE_EMAIL,

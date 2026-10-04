@@ -25,7 +25,7 @@ Route::prefix("v1/web")
             )->middleware("auth:sanctum");
             Route::get(
                 "/authorise",
-                [WebUserController::class, "authorizeUser"],
+                [WebUserController::class, "authoriseUser"],
             )->middleware("auth:sanctum");
             Route::post(
                 "/avatar",
@@ -58,7 +58,7 @@ Route::prefix("/v1/user")->group(function () {
     )->middleware("auth:sanctum");
     Route::get(
         "/authorise",
-        [UserController::class, "authorizeUser"],
+        [UserController::class, "authoriseUser"],
     )->middleware("auth:sanctum");
 });
 
