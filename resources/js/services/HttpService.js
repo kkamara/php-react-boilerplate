@@ -207,7 +207,7 @@ export default class HttpService
 
   putRequestOptions = ({ token, item, }) => {
     const requestOptions = {
-      method: "POST",
+      method: "PUT",
       headers: {
         "Content-type" : "application/json",
         "Time-Zone": Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -222,7 +222,7 @@ export default class HttpService
 
   patchRequestOptions = ({ token, item, }) => {
     const requestOptions = {
-      method: "POST",
+      method: "PATCH",
       headers: {
         "Content-type" : "application/json",
         "Time-Zone": Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -237,7 +237,7 @@ export default class HttpService
 
   delRequestOptions = (token) => {
     const requestOptions = {
-      method: "GET",
+      method: "DELETE",
       headers: {
         "Content-type" : "application/json",
         "Time-Zone": Intl.DateTimeFormat().resolvedOptions().timeZone,
